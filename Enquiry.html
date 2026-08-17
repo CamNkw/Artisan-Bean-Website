@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Artisan Bean — Workshops &amp; Enquiry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ========== HEADER & NAVIGATION ========== -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About Us.html">About</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Enquiry.html" class="active">Workshops / Enquiry</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <div class="container">
+
+            <section>
+                <h1>Workshop Bookings &amp; General Enquiries</h1>
+                <p>Interested in a private workshop, wholesale partnership, or a corporate coffee tasting event? Fill in the form below and we'll get back to you within 24 hours.</p>
+            </section>
+
+            <!-- Enquiry Form -->
+            <section>
+                <h2>Get in Touch</h2>
+
+                <form action="#" method="post">
+                    <!-- Full Name -->
+                    <label for="fullname">Full Name <span class="required">*</span></label>
+                    <input type="text" id="fullname" name="fullname" required>
+
+                    <!-- Email -->
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+
+                    <!-- Phone -->
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <!-- Enquiry Type (dropdown) -->
+                    <label for="enquiry-type">Enquiry Type <span class="required">*</span></label>
+                    <select id="enquiry-type" name="enquiry-type" required>
+                        <option value="">-- Please select --</option>
+                        <option value="workshop">Workshop Booking</option>
+                        <option value="wholesale">Wholesale Enquiry</option>
+                        <option value="corporate">Corporate Event</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <!-- Preferred Date -->
+                    <label for="preferred-date">Preferred Date</label>
+                    <input type="date" id="preferred-date" name="preferred-date">
+
+                    <!-- Group Size -->
+                    <label for="group-size">Group Size (if applicable)</label>
+                    <input type="number" id="group-size" name="group-size" min="1" max="50">
+
+                    <!-- Message -->
+                    <label for="message">Your Message <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <!-- Submit Button -->
+                    <button type="submit">Send Enquiry</button>
+                </form>
+
+                <p><em><span class="required">*</span> Required fields</em></p>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <p>&copy; 2026 The Artisan Bean Coffee Roastery. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

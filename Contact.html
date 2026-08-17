@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Artisan Bean — Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ========== HEADER & NAVIGATION ========== -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About Us.html">About</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Enquiry.html">Workshops / Enquiry</a></li>
+                <li><a href="Contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <div class="container">
+
+            <section>
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you. Visit us at one of our two locations, or reach out via the details below.</p>
+            </section>
+
+            <!-- Locations -->
+            <section>
+                <h2>Our Locations</h2>
+                <div class="location-grid">
+                    <!-- Location 1 -->
+                    <div class="location-card">
+                        <img src="images/map-hq.jpg" alt="Map showing roastery location">
+                        <h3>Roastery &amp; HQ</h3>
+                        <address>
+                            Unit 4, 12 Baker Street,<br>
+                            Gardens, Cape Town
+                        </address>
+                        <p class="hours">Mon–Fri 8am–4pm</p>
+                    </div>
+
+                    <!-- Location 2 -->
+                    <div class="location-card">
+                        <img src="images/map-cafe.jpg" alt="Map showing café location">
+                        <h3>Café &amp; Tasting Room</h3>
+                        <address>
+                            45 Kloof Street,<br>
+                            Tamboerskloof, Cape Town
+                        </address>
+                        <p class="hours">Mon–Sat 7am–6pm, Sun 8am–2pm</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Details & Quick Form -->
+            <section>
+                <h2>Get in Touch Directly</h2>
+                <p><strong>Email:</strong> <a href="mailto:hello@artisanbean.co.za">hello@artisanbean.co.za</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+27215550192">+27 21 555 0192</a></p>
+
+                <h3 style="margin-top:2rem;">Or send a quick message</h3>
+                <form action="#" method="post">
+                    <label for="contact-name">Your Name <span class="required">*</span></label>
+                    <input type="text" id="contact-name" name="contact-name" required>
+
+                    <label for="contact-email">Your Email <span class="required">*</span></label>
+                    <input type="email" id="contact-email" name="contact-email" required>
+
+                    <label for="contact-msg">Message <span class="required">*</span></label>
+                    <textarea id="contact-msg" name="contact-msg" rows="4" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <p>&copy; 2026 The Artisan Bean Coffee Roastery. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
