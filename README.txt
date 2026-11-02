@@ -50,22 +50,8 @@ When the site is opened directly from a local file (file://), or hosted somewher
 - Images resized and recompressed as JPEG to reduce transfer size; below-the-fold images use lazy loading and the homepage hero image has high fetch priority.
 - Responsive layout, keyboard focus indicators, skip link, reduced-motion support and accessible form status messages.
 
-IMPORTANT SEO DOMAIN NOTE
-The original README listed artisanbean.co.za as a future/reserved domain. The sitemap and robots.txt therefore use https://artisanbean.co.za as a placeholder. Replace this domain with the actual deployed Netlify/custom-domain URL before submitting or launching publicly. Do not claim that the domain is active until it has been registered and connected.
 
-6. DEPLOYMENT — NETLIFY
-1. Extract the ZIP folder.
-2. Sign in to Netlify and choose Add new site > Deploy manually (or connect the GitHub repository).
-3. Drag the contents of the `Artisan Bean Website` folder into the Netlify deploy area. The five HTML files must remain at the published root, with `css`, `js` and `images` folders alongside them.
-4. Open the generated Netlify URL and test every page and navigation link.
-5. In Netlify, enable form detection and trigger a new deploy if requested. Submit a test enquiry and verify it appears in the Forms dashboard.
-6. Configure form email notifications to the correct business email address.
-7. Replace the placeholder domain in `robots.txt` and `sitemap.xml` with the final public domain, then redeploy.
-8. Submit the sitemap URL to Google Search Console after the domain is live.
-
-The project is prepared for Netlify but has not been deployed because no hosting account access or deployment approval was provided in this task.
-
-7. FILE AND FOLDER STRUCTURE
+6. FILE AND FOLDER STRUCTURE
 Artisan Bean Website/
 |-- Home.html
 |-- About Us.html
@@ -92,7 +78,7 @@ Artisan Bean Website/
     |-- map-hq.jpg
     `-- map-cafe.jpg
 
-8. CHANGELOG
+7. CHANGELOG
 Version 1.0.0 — 17 August 2026 — Part 1 foundation
 - Created the five original HTML pages, shared CSS stylesheet, navigation, product cards, team section, contact details and initial forms.
 
@@ -119,7 +105,7 @@ Known limitations / actions before final submission:
 - The artisanbean.co.za domain in the sitemap is a placeholder from the original project; replace it if a different live domain is used.
 - The project uses Google Fonts and Leaflet from CDNs; those resources require an internet connection.
 
-9. TESTING CHECKLIST
+8. TESTING CHECKLIST
 [✅] Open Home.html and follow all five navigation links.
 [✅] Test the mobile menu at a narrow screen width.
 [✅] Open About Us.html and expand/collapse Mission and Vision using mouse and keyboard.
@@ -132,7 +118,7 @@ Known limitations / actions before final submission:
 [✅] Replace placeholder sitemap domain and check deployed robots.txt and sitemap.xml.
 [✅] Test the site on desktop and mobile and run Lighthouse/PageSpeed before final submission.
 
-10. REFERENCES / THIRD-PARTY RESOURCES
+9. REFERENCES / THIRD-PARTY RESOURCES
 - MDN Web Docs — HTML forms and constraint validation: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation
 - MDN Web Docs — Fetch API: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
 - Leaflet documentation: https://leafletjs.com/reference.html
