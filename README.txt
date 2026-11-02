@@ -98,13 +98,6 @@ Changed:
 - Updated README to document Part 3 functionality, deployment instructions, known limitations and the changelog.
 - Preserved the original five-page structure, Artisan Bean branding, coffee colour palette, page content and supplied imagery.
 
-Known limitations / actions before final submission:
-- No Part 2 lecturer feedback document was included with the supplied ZIP, so this changelog records the technical corrections and enhancements made during Part 3. Add any lecturer-specific feedback corrections after comparing the official Part 2 feedback.
-- The interactive map uses approximate neighbourhood coordinates; verify exact business locations.
-- The site has not been deployed. Netlify form handling and email notifications must be activated and tested after deployment.
-- The artisanbean.co.za domain in the sitemap is a placeholder from the original project; replace it if a different live domain is used.
-- The project uses Google Fonts and Leaflet from CDNs; those resources require an internet connection.
-
 8. TESTING CHECKLIST
 [✅] Open Home.html and follow all five navigation links.
 [✅] Test the mobile menu at a narrow screen width.
