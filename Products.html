@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Specialty Coffee Beans | The Artisan Bean Cape Town</title>
+    <meta name="description" content="Explore Colombia Supremo, Ethiopia Yirgacheffe, Brazil Santos and our signature house blend. Search and compare freshly roasted specialty coffee beans.">
+    <meta name="theme-color" content="#4A2C2A">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Shop Specialty Coffee Beans | The Artisan Bean Cape Town">
+    <meta property="og:description" content="Explore Colombia Supremo, Ethiopia Yirgacheffe, Brazil Santos and our signature house blend. Search and compare freshly roasted specialty coffee beans.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="Home.html" aria-label="The Artisan Bean home">The Artisan <span>Bean</span><small>COFFEE ROASTERY · CAPE TOWN</small></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">☰ <span>Menu</span></button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation"><ul>
+      <li><a href="Home.html" >Home</a></li><li><a href="About Us.html" >About</a></li><li><a href="Products.html" class="active" aria-current="page">Products</a></li><li><a href="Enquiry.html" >Workshops / Enquiry</a></li><li><a href="Contact.html" >Contact</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="main-content">
+        <div class="container">
+
+            <section>
+                <h1>Our Coffee Selection</h1>
+                <p>Our beans are sourced directly from small‑holder farms and roasted fresh every Tuesday. Choose from our current single‑origin offerings or try our signature house blend.</p>
+                <p><em>Whole beans only — we can grind to your preference on request.</em></p>
+            </section>
+
+            <!-- Search, filter and sort controls (JavaScript enhancement) -->
+            <section aria-labelledby="catalogue-heading">
+                <h2 id="catalogue-heading">Find Your Coffee</h2>
+                <div class="catalogue-controls">
+                  <label for="product-search">Search products</label><input id="product-search" type="search" placeholder="Search by name or tasting note">
+                  <label for="product-category">Coffee style</label><select id="product-category"><option value="all">All coffees</option><option value="single-origin">Single origin</option><option value="blend">Blends</option></select>
+                  <label for="product-sort">Sort by price</label><select id="product-sort"><option value="featured">Featured order</option><option value="low-high">Price: low to high</option><option value="high-low">Price: high to low</option></select>
+                </div>
+                <p id="product-count" class="result-count" aria-live="polite">4 products found</p>
+                <div class="product-grid" id="product-grid">
+                    <article class="product-card" data-product-card data-category="single-origin" data-price="180">
+                        <img data-lightbox src="images/product-colombia.jpg" alt="Colombia Supremo coffee bag" loading="lazy">
+                        <h3>Colombia Supremo</h3>
+                        <p class="price">R180</p>
+                        <p>Washed process, medium roast. Notes of caramel and red apple.</p>
+                    </article>
+
+                    <article class="product-card" data-product-card data-category="single-origin" data-price="210">
+                        <img data-lightbox src="images/product-ethiopia.jpg" alt="Ethiopia Yirgacheffe coffee bag" loading="lazy">
+                        <h3>Ethiopia Yirgacheffe</h3>
+                        <p class="price">R210</p>
+                        <p>Natural process, light roast. Floral and fruity with blueberry notes.</p>
+                    </article>
+
+                    <article class="product-card" data-product-card data-category="single-origin" data-price="160">
+                        <img data-lightbox src="images/product-brazil.jpg" alt="Brazil Santos coffee bag" loading="lazy">
+                        <h3>Brazil Santos</h3>
+                        <p class="price">R160</p>
+                        <p>Pulped natural, medium‑dark roast. Nutty and smooth with low acidity.</p>
+                    </article>
+
+                    <article class="product-card" data-product-card data-category="blend" data-price="190">
+                        <img data-lightbox src="images/product-houseblend.jpg" alt="Artisan's Choice house blend coffee bag" loading="lazy">
+                        <h3>House Blend "Artisan's Choice"</h3>
+                        <p class="price">R190</p>
+                        <p>A balanced blend of three origins, designed to shine as espresso or filter.</p>
+                    </article>
+                </div>
+            </section>
+
+        </div>
+    <div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Expanded coffee product image"><button type="button" aria-label="Close image">×</button><img src="" alt=""></div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer"><p>&copy; <span data-current-year>2026</span> The Artisan Bean Coffee Roastery. All rights reserved.</p><p>Small-batch roasted with care in Cape Town.</p><a href="Contact.html">Visit or contact us</a></footer>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>

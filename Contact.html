@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact The Artisan Bean | Cape Town Coffee Roastery</title>
+    <meta name="description" content="Find The Artisan Bean roastery and café in Cape Town. View opening hours, contact details and send our team a message.">
+    <meta name="theme-color" content="#4A2C2A">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact The Artisan Bean | Cape Town Coffee Roastery">
+    <meta property="og:description" content="Find The Artisan Bean roastery and café in Cape Town. View opening hours, contact details and send our team a message.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="Home.html" aria-label="The Artisan Bean home">The Artisan <span>Bean</span><small>COFFEE ROASTERY · CAPE TOWN</small></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">☰ <span>Menu</span></button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation"><ul>
+      <li><a href="Home.html" >Home</a></li><li><a href="About Us.html" >About</a></li><li><a href="Products.html" >Products</a></li><li><a href="Enquiry.html" >Workshops / Enquiry</a></li><li><a href="Contact.html" class="active" aria-current="page">Contact</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="main-content">
+        <div class="container">
+
+            <section>
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you. Visit us at one of our two locations, or reach out via the details below.</p>
+            </section>
+
+            <!-- Locations -->
+            <section>
+                <h2>Our Locations</h2>
+                <div class="location-grid">
+                    <!-- Location 1 -->
+                    <div class="location-card">
+                        <img src="images/map-hq.jpg" alt="Map illustration for the roastery location" loading="lazy">
+                        <h3>Roastery &amp; HQ</h3>
+                        <address>
+                            Unit 4, 12 Baker Street,<br>
+                            Gardens, Cape Town
+                        </address>
+                        <p class="hours">Mon–Fri 8am–4pm</p>
+                    </div>
+
+                    <!-- Location 2 -->
+                    <div class="location-card">
+                        <img src="images/map-cafe.jpg" alt="Map illustration for the café location" loading="lazy">
+                        <h3>Café &amp; Tasting Room</h3>
+                        <address>
+                            45 Kloof Street,<br>
+                            Tamboerskloof, Cape Town
+                        </address>
+                        <p class="hours">Mon–Sat 7am–6pm, Sun 8am–2pm</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Explore Our Locations</h2>
+                <p>Use the interactive map to view both Cape Town locations. Select a marker for the address.</p>
+                <div id="location-map" class="location-map" role="application" aria-label="Interactive map showing The Artisan Bean locations"></div>
+                <p class="map-note">Map markers show approximate neighbourhood positions. Confirm exact premises before travelling.</p>
+            </section>
+
+            <!-- Contact Details & Quick Form -->
+            <section>
+                <h2>Get in Touch Directly</h2>
+                <p><strong>Email:</strong> <a href="mailto:hello@artisanbean.co.za">hello@artisanbean.co.za</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+27215550192">+27 21 555 0192</a></p>
+
+                <h3 style="margin-top:2rem;">Or send a quick message</h3>
+                <form name="contact-message" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-validate>
+                    <input type="hidden" name="form-name" value="contact-message">
+                    <p class="visually-hidden"><label>Do not fill this in <input name="bot-field"></label></p>
+                    <label for="contact-name">Your Name <span class="required">*</span></label>
+                    <input type="text" id="contact-name" name="contact-name" autocomplete="name" minlength="2" maxlength="80" required>
+
+                    <label for="contact-email">Your Email <span class="required">*</span></label>
+                    <input type="email" id="contact-email" name="contact-email" autocomplete="email" maxlength="120" required>
+
+                    <label for="contact-msg">Message <span class="required">*</span></label>
+                    <textarea id="contact-msg" name="contact-msg" rows="4" minlength="10" maxlength="1500" required></textarea>
+                    <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+
+                    <button type="submit" data-label="Send Message">Send Message</button>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer"><p>&copy; <span data-current-year>2026</span> The Artisan Bean Coffee Roastery. All rights reserved.</p><p>Small-batch roasted with care in Cape Town.</p><a href="Contact.html">Visit or contact us</a></footer>
+
+<script src="js/site.js" defer></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+<script src="js/maps.js" defer></script>
+</body>
+</html>
